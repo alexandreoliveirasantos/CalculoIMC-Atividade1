@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Calculo IMC</title>
 </head>
 <body>
-
+	Digite o peso em (KG):
+	Digite a altura (m.cm):
+	<form action = "mostra-imc.jsp">
+	Peso: <input type = "text" name = "peso"/> <input type = "submit"/>
+	Altura: <input type = "text" name = "altura"/> <input type = "submit"/>
+	</form>
 </body>
 </html>

@@ -10,7 +10,7 @@
 	<%
 	String message = "Welcome to the system of agenda of FJ-21!";
 %>
-	<%= message%> <br/>
+	<%= message%> <br />
 	<!-- COMENTARIO HTML! A SAIDA PODERIA SER ESCRITA DESSA FORMA ABAIXO.. -->
 	<!-- (forma de scriplet.. < % out.println(message); % > ) -->
 
