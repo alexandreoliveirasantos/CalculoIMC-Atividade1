@@ -9,6 +9,13 @@
 <body>
 	O peso é ${param.peso}.
 	A altura é ${param.altura}.<br />
+	sexo = ${param.sexo}.<br />
+	
+	<%
+		out.println("Sexo Masculino");%>
+	
+	O sexo é:<br /><br /><br />
+
 	<img src="imagens/imcTabela.png" title="Tabela IMC" width="370px" height="240px alt="Tabela IMC" align="left" border="1px"/>
 	<!--
 	https://www.youtube.com/watch?v=a1_1TtS6FXQ
