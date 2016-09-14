@@ -28,10 +28,10 @@
 	double imcTotal=0;
 	
 	if(sexoInteiro == 1){
-		sexoFinal = "Sexo Feminino";
+		sexoFinal = " Sexo Feminino ";
 	}
 		else if(sexoInteiro == 2){
-			sexoFinal = "Sexo Masculino";
+			sexoFinal = " Sexo Masculino ";
 		}
 		else{
 			sexoFinal = "Ocorreu um erro!";
@@ -46,6 +46,7 @@
 	</br>
        <!--  <p class="text-muted" align="center"> -->
        <h4 class="text-center"><font color = "red">
+        <% out.println(sexoFinal); %> </br></br>
 		Seu IMC é: <% out.println(imcFormat); %> </br>
 	<%
 	//RESULTADO IMC HOMENS e MULHERES>>
@@ -87,7 +88,7 @@
 			break;
 		}
 %>
-</h4></font>
+</h4> </font>
  <!-- </p> -->
             
 	<!-- O peso é ${param.peso}.
