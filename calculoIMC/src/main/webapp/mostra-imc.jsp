@@ -44,7 +44,8 @@
     String imcFormat = df.format(imcTotal);
 	%>
 	</br>
-       <p class="text-muted" align="center"> 
+       <!--  <p class="text-muted" align="center"> -->
+       <h4 class="text-center"><font color = "red">
 		Seu IMC é: <% out.println(imcFormat); %> </br>
 	<%
 	//RESULTADO IMC HOMENS e MULHERES>>
@@ -86,7 +87,8 @@
 			break;
 		}
 %>
- </p>
+</h4></font>
+ <!-- </p> -->
             
 	<!-- O peso é ${param.peso}.
 	A altura é ${param.altura}.<br />
