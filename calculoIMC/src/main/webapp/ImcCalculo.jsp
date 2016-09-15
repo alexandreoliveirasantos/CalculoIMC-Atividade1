@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -13,20 +12,58 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-	<!-- Formulário Gerado com Bootsnipp (www.bootsnipp.com -->
-	<form class="form-horizontal" action = "mostra-imc.jsp">
+
+<div class="container">
+    <!-- Indicators -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="http://www.cruzazulsp.com.br/wp-content/uploads/2015/07/banner-cruz-azul-saude.jpg" alt="Chania">
+                <div class="carousel-caption">
+                    <h3>Saiba mais sobre sua saúde</h3>
+                    <p>Através de nossas soluções você poderá obter mais informações sobre sua saúde!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://bradescosaudesponline.com.br/wp-content/uploads/2016/02/BANNER-BRADESCO-SAUDE...-1500x430.jpg" alt="Chania">
+                <div class="carousel-caption">
+                    <h3>Trabalhamos sua Saúde</h3>
+                    <p>Trabalhamos algo muito importante para você: Sua saúde!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.rodrigooller.com/wp-content/uploads/2013/05/wdw.jpg" alt="Flower">
+                <div class="carousel-caption">
+                    <h3>Mude sua alimentação</h3>
+                    <p>Uma alimentação saudável previne deficiências nutricionais e protege contra doenças infecciosas. </p>
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    </div>
+</div>
+
+	<form class="form-horizontal" action = "mostra-imc.jsp"> 	<!-- Formulário - Este formulario foi Gerado com Bootsnipp (indicado professor) (www.bootsnipp.com -->
 		<fieldset>
 
-			<!-- Form Name -->
-			<legend>Cálculo IMC:</legend>
+			<!-- Formulário Name e Centralizado -->
+			<legend align="center">Cálculo IMC: </legend>
 
 			<!-- Select Basic -->
 			<div class="form-group">
@@ -72,7 +109,7 @@
 		</fieldset>
 	</form>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins)  -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->

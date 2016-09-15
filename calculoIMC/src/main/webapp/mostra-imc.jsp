@@ -17,9 +17,12 @@
 		import = "java.text.DecimalFormat"
 	%> 
 	
-	<% String peso = request.getParameter("peso");
+	<% String peso = request.getParameter("peso"); //Recebimento de parâmetros
 	String altura = request.getParameter("altura");
 	String sexo = request.getParameter("sexo");
+	
+	sexo = sexo.replaceAll(",", "."); //Tratamento caso o usuário insira caracter virgula ao invés de ponto.
+	altura = altura.replaceAll(",", ".");
 	
 	double pesoFinal = Double.parseDouble(peso);
 	double  alturaFinal = Double.parseDouble(altura);
@@ -40,7 +43,7 @@
 	//Calculo de IMC
 	imcTotal = (pesoFinal / java.lang.Math.pow(alturaFinal,2));
 	
-    DecimalFormat df = new DecimalFormat("#0.00");  
+    DecimalFormat df = new DecimalFormat("#0.00");  //FOMARTAÇÃO PARA IMPRESSÃO NO FORMA X.XX
     String imcFormat = df.format(imcTotal);
 	%>
 	</br>
@@ -86,8 +89,7 @@
 		default:
 			%> Ocorreu um erro desconhecido durante a geração de relatório de seu IMC!  <%
 			break;
-		}
-%>
+		} %>
 </h4> </font>
  <!-- </p> -->
             
