@@ -21,7 +21,7 @@
 	String altura = request.getParameter("altura");
 	String sexo = request.getParameter("sexo");
 	
-	sexo = sexo.replaceAll(",", "."); //Tratamento caso o usuário insira caracter virgula ao invés de ponto.
+	peso = peso.replaceAll(",", "."); //Tratamento caso o usuário insira caracter virgula ao invés de ponto.
 	altura = altura.replaceAll(",", ".");
 	
 	double pesoFinal = Double.parseDouble(peso);
